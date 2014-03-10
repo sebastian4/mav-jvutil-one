@@ -5,6 +5,5 @@ public class App
     public static void main( String[] args )
     {
         System.out.println( "Hi hello hello hello" );
-        System.out.println( Something.saySomething() );
     }
 }
