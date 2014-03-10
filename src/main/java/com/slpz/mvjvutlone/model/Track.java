@@ -2,9 +2,29 @@ package com.slpz.mvjvutlone.model;
 
 public class Track {
  
+	Integer id;
 	String title;
 	String singer;
- 
+	
+	public Track() {
+		super();
+	}
+
+	public Track(Integer id, String title, String singer) {
+		super();
+		this.id = id;
+		this.title = title;
+		this.singer = singer;
+	}
+
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+
 	public String getTitle() {
 		return title;
 	}
@@ -23,7 +43,7 @@ public class Track {
  
 	@Override
 	public String toString() {
-		return "Track [ title=" + title + ", singer=" + singer + " ]";
+		return "Track [ id=" + id + ", title=" + title + ", singer=" + singer + " ]";
 	}
  
 }
