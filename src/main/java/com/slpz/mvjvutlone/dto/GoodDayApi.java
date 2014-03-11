@@ -1,6 +1,6 @@
 package com.slpz.mvjvutlone.dto;
 
-public class GoodDayDto {
+public class GoodDayApi {
 
 	public String getMorning(String msg) {
 		
