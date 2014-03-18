@@ -1,8 +1,10 @@
 package com.slpz.mvjvutlone;
 
 import java.util.List;
+
 import com.slpz.mvjvutlone.dto.TrackDto;
 import com.slpz.mvjvutlone.model.Track;
+import com.slpz.mvjvutlone.dto.PassReqApi;
 
 public class App 
 {
@@ -10,6 +12,7 @@ public class App
     {
         System.out.println( "Hi hello hello hello" );
         tst1();
+        tst2();
     }
     
     public static void tst1() {
@@ -52,4 +55,13 @@ public class App
     	}
     	System.out.println("------");
     }
+    
+    public static void tst2() {
+    	PassReqApi reqApi = new PassReqApi();
+    	System.out.println("sending post request");
+		String response = reqApi.sendingPost("023");
+		System.out.println(response);
+		System.out.println("------");
+    }
+    
 }
